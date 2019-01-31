@@ -40,7 +40,12 @@
 */
 
 function showValues( obj ) {
-  //Code Here
+  let arr =[]
+  for(let prop in obj){
+    arr.push(obj[prop])
+    
+  }
+  return arr.join('')
 }
 
 
@@ -54,6 +59,14 @@ function showValues( obj ) {
 */
 
 //Code Here
+function greaterThan10(obj){
+  for (let prop in obj){
+    if(obj[prop] > 10){
+      obj[prop] = 0
+    }
+  }
+  return obj
+}
 
 
 
@@ -66,7 +79,12 @@ function showValues( obj ) {
 */
 
 //Code Here
-
+function double(obj){
+  for(let prop in obj){
+    obj[prop] *=  2
+  }
+  return obj
+}
 
 
 ////////// PROBLEM 4 //////////
